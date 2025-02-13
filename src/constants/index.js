@@ -212,6 +212,26 @@ export const myProjects = [
     },
 ];
 
+export const socialLinks = []
+
+export const aboutMe = {
+        image: '/assets/grid1.png',
+        headText: 'Hi, I\'m Youssef',
+        subText: 'With 1 year of experience, I have honed my skills in mobile development, with a focus on user friendly application',
+    };
+
+export const techStack = {
+        image: '/assets/grid2.png',
+        headText: 'Tech Stack',
+        subText: 'I specialize in Kotlin/Java with a focus on Native android and compose'
+};
+
+export const work = {
+    headText: 'Available to work remotely/on site.',
+    subText: 'I am currently based in Cairo, Egypt, with remote work available.'
+
+}
+
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
         deskScale: isSmall ? 0.08 : isMobile ? 0.07 : 0.09,

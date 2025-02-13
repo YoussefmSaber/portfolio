@@ -21,7 +21,6 @@ const Hero = () => {
                 <p className={"hero_tag text-gray_gradient"}>An Mobile Android Developer</p>
             </div>
             <div className={"w-full h-full absolute inset-0"}>
-
                 <Canvas className={"w-full h-full"}>
                     <Suspense fallback={<CanvasLoader />}>
                         <PerspectiveCamera makeDefault position={[0, 0, 25]}/>

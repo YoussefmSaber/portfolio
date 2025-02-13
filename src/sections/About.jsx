@@ -1,6 +1,7 @@
 import {aboutMe, techStack, work} from "../constants/index.js";
 import Globe from "react-globe.gl";
 import Button from "../component/Button.jsx";
+import {useState} from "react";
 
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
@@ -10,7 +11,8 @@ const About = () => {
         setTimeout(() => setHasCopied(false), 2000);
     }
     return (
-        <section className={"c-space my-20"}>
+        <section id={"about"} className={"c-space my-20"}>
+            <p className={"head-text mb-8"}>About Me</p>
             <div className={"grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full"}>
                 <div className={"col-span-1 xl:row-span-3"}>
                     <div className={"grid-container"}>

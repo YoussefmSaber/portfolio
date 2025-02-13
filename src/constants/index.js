@@ -212,7 +212,15 @@ export const myProjects = [
     },
 ];
 
-export const socialLinks = []
+export const workExperience = [ {
+    index: 1,
+    position: 'Android Developer Intern',
+    company: 'Prodigy InfoTech',
+    location: 'Remote',
+    duration: 'December, 2024 - January, 2025',
+    desc: 'Prodigy InfoTech is a technology company that provides internships in mobile development, web development, machine learning, and data science. It focuses on offering hands-on experience through real-world projects, helping individuals develop practical skills and industry knowledge in a supportive learning environment.',
+    icon: '/assets/prodigy.png',
+},]
 
 export const aboutMe = {
         image: '/assets/grid1.png',
@@ -232,13 +240,9 @@ export const work = {
 
 }
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
+export const calculateSizes = (isSmall, isMobile) => {
     return {
         deskScale: isSmall ? 0.08 : isMobile ? 0.07 : 0.09,
         deskPosition: isMobile ? [0.75, -6.5, 0] : [0, -6.5, -5.0],
-        cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
 };

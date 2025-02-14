@@ -242,7 +242,6 @@ export const work = {
 
 export const calculateSizes = (isSmall, isMobile) => {
     return {
-        deskScale: isSmall ? 0.08 : isMobile ? 0.07 : 0.09,
-        deskPosition: isMobile ? [0.75, -6.5, 0] : [0, -6.5, -5.0],
+        scale: isSmall ? 0.8 : isMobile ? 0.7 : 1.25,
     };
 };

@@ -1,6 +1,6 @@
 import {Canvas} from "@react-three/fiber";
 import {workExperience} from "../constants/index.js";
-import {OrbitControls} from "@react-three/drei";
+import {OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import {Suspense} from "react";
 import CanvasLoader from "../component/CanvasLoader.jsx";
 import Developer from "../component/Developer.jsx";
@@ -13,12 +13,13 @@ const Experience = () => {
                 <div className={"work-container"}>
                     <div className={"work-canvas"}>
                         <Canvas>
-                            <ambientLight intensity={7} />
-                            <spotLight position={[10, 10, 10]} angle={0.15} penubra={1}/>
-                            <directionalLight position={[10, 10, 10]} intensity={1} />
-                            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2} />
                             <Suspense fallback={<CanvasLoader />}>
-                                <Developer animationName={'idle'} position-y={-3} scale={3}/>
+                                <PerspectiveCamera makeDefault position={[2, 2, 7]} />
+                                <ambientLight position={[0,10,0]} intensity={2} color={"#A8B5FF"} />
+                                <directionalLight position={[0, 10, 10]} intensity={2} color={"#FFF4CA"}/>
+                                <directionalLight position={[-20, 0, 0]} intensity={1} color={"#FFFFFF"}/>
+                                <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2}  />
+                                <Developer animationName={'idle'} position-y={-2.75} scale={3}/>
                             </Suspense>
                         </Canvas>
                     </div>

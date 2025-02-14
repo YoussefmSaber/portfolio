@@ -1,5 +1,5 @@
 import {useAnimations, useFBX, useGLTF} from '@react-three/drei';
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 
 const Developer = (props) => {
 

@@ -11,6 +11,11 @@ const NavItems = () => {
                     </li>
                 )
             )}
+            <a href="/resume.pdf" 
+                className="nav-li" 
+                download="Youssef-Mohamed-Resume.pdf">
+                Get Resume
+            </a>
         </ul>
     );
 };
@@ -29,6 +34,7 @@ const Navbar = () => {
                     </button>
                     <nav className={"sm:flex hidden"}>
                         <NavItems/>
+                        
                     </nav>
                 </div>
             </div>

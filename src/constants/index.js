@@ -33,7 +33,6 @@ export const myProjects = [
         logoStyle: {
             backgroundColor: 'rgba(246,156,28,0.15)',
             border: '0.2px solid #422D0D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
         spotlight: '/assets/spotlight1.png',
         tags: [
@@ -75,7 +74,6 @@ export const myProjects = [
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
         },
         spotlight: '/assets/spotlight2.png',
         tags: [
@@ -117,7 +115,6 @@ export const myProjects = [
         logoStyle: {
             backgroundColor: '#424875',
             border: '0.2px solid #272a45',
-            boxShadow: '0px 0px 60px 0px #272a45',
         },
         spotlight: '/assets/spotlight3.png',
         tags: [

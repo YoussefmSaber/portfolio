@@ -25,7 +25,7 @@ const About = () => {
                 </div>
                 <div className={"col-span-1 xl:row-span-3"}>
                     <div className={"grid-container"}>
-                        <img src={techStack.image} alt={"grid-2"} className={"w-full sm:w-[276px] h-fit object-contain"}/>
+                        <img src={techStack.image} alt={"grid-2"} className={"w-full sm:h-[276px] h-fit object-contain"}/>
                         <div>
                             <p className={"grid-headtext"}>{techStack.headText}</p>
                             <p className={"grid-subtext"}>{techStack.subText}</p>

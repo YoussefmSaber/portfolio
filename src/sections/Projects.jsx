@@ -3,7 +3,7 @@ import {Suspense, useState} from "react";
 import {Canvas} from "@react-three/fiber";
 import CanvasLoader from "../component/CanvasLoader.jsx";
 import DemoDevice from "../component/DemoDevice.jsx";
-import {PerspectiveCamera} from "@react-three/drei";
+import {OrbitControls, PerspectiveCamera} from "@react-three/drei";
 
 const Projects = () => {
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
@@ -60,9 +60,10 @@ const Projects = () => {
                <div className={"border border-black-300 bg-black-200 rounded-lg h-380 sm:h-full md:h-full"}>
                     <Canvas>
                         <Suspense fallback={<CanvasLoader/>}>
+                        <OrbitControls maxPolarAngle={Math.PI/2} enableZoom={false}/>
                             <PerspectiveCamera
                                 makeDefault
-                                position={[0, -1.25, 6]}
+                                position={[0, 0, 6]}
                                 rotation={[0, 0, 0]}/>
                             <DemoDevice texture={currentProject.texture} />
                             <directionalLight position={[2, 4, 0]} intensity={100} color={"#fff4ca"}/>

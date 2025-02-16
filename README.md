@@ -1,10 +1,5 @@
-Here's a well-crafted `README.md` for your **Portfolio** repository:  
-
----
-
 ## 🌐 Youssef Mohamed – Personal Portfolio  
-
-![Portfolio Preview](https://via.placeholder.com/1200x600?text=Portfolio+Preview)  
+---
 
 ### 🚀 Overview  
 This is my **personal portfolio website**, showcasing my work, skills, and projects. Built with **React.js**, **Tailwind CSS**, and **Three.js**, it offers a modern and interactive experience.  

@@ -24,47 +24,51 @@ export const navLinks = [
 // TODO: Modify this section
 export const myProjects = [
     {
-        title: 'GeoGlimpse - AI Landmark Detection App',
-        desc: 'GeoGlimpse is a landmark detection app that uses AI to identify landmarks in images. It uses a custom-trained model to identify landmarks in images and provides its results in real-time without any internet connection.',
-        subdesc:
-            'Built as an innovative mobile application using Jetpack Compose and TensorFlow, GeoGlimpse is designed for cutting-edge user experience and machine learning capabilities, ensuring seamless functionality and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        title: 'MedFinder - AI-Powered Medical App',
+        desc: 'MedFinder is an AI-driven Android app that helps users locate nearby pharmacies, find medicines through prescription or image recognition, set treatment reminders, and track health metrics like BMI and BMR. It also features AI-powered diagnosis and medicine recommendations for a smarter healthcare experience.',
+        subdesc:'Developed with Kotlin and Clean Architecture, MedFinder utilizes Room Database, Retrofit for API communication, Google Maps for location services, and AI for image recognition and diagnosis. It offers a seamless and intelligent solution for medicine discovery, treatment management, and health monitoring.'
+            , href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
+            backgroundColor: 'rgba(246,156,28,0.15)',
+            border: '0.2px solid #422D0D',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
         spotlight: '/assets/spotlight1.png',
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Kotlin',
+                path: '/assets/kotlin.svg',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Android Jetpack',
+                path: 'assets/jetpack.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'Retrofit',
+                path: '/assets/retrofit.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Room Database',
+                path: '/assets/room.svg',
+            },
+            {
+                id: 5,
+                name: 'Google maps',
+                path: '/assets/maps.svg',
             },
         ],
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'GeoGlimpse - AI Landmark Detection App',
+        desc: 'GeoGlimpse is a landmark detection app that uses AI to identify landmarks in images. It uses a custom-trained model to identify landmarks in images and provides its results in real-time without any internet connection.',
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+            'Built as an innovative mobile application using Jetpack Compose and TensorFlow, GeoGlimpse is designed for cutting-edge user experience and machine learning capabilities, ensuring seamless functionality and scalability.',
         href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
@@ -77,136 +81,64 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Kotlin',
+                path: '/assets/kotlin.svg',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Jetpack Compose',
+                path: 'assets/compose.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'TensorFlow',
+                path: '/assets/tensorflow.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Koin',
+                path: '/assets/koin.svg',
+            },
+            {
+                id: 5,
+                name: 'Room Database',
+                path: '/assets/room.svg',
             },
         ],
     },
     {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        title: 'Task Manager – Efficient To-Do & Productivity Tracker',
+        desc: 'Task Manager is a sleek and intuitive Android app designed to help users organize their daily tasks efficiently. It allows users to create, update, and manage to-do lists with a smooth user experience, ensuring productivity and task completion.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+            'Built with Kotlin and following Clean Architecture principles, Task Manager leverages Room Database for offline storage, MVVM for structured UI interactions, and Jetpack Compose for a modern UI experience. It provides an easy-to-use platform for managing tasks effectively.',
         href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
         texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
+        logo: '/assets/project-logo3.webp',
         logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+            backgroundColor: '#424875',
+            border: '0.2px solid #272a45',
+            boxShadow: '0px 0px 60px 0px #272a45',
         },
         spotlight: '/assets/spotlight3.png',
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Kotlin',
+                path: '/assets/kotlin.svg',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Jetpack Compose',
+                path: 'assets/compose.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
+                name: 'Room Database',
+                path: '/assets/room.svg',
+            },{
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
-    {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-        subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-        texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
-        logoStyle: {
-            backgroundColor: '#0E1F38',
-            border: '0.2px solid #0E2D58',
-            boxShadow: '0px 0px 60px 0px #2F67B64D',
-        },
-        spotlight: '/assets/spotlight4.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
-    {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-        texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
-        logoStyle: {
-            backgroundColor: '#1C1A43',
-            border: '0.2px solid #252262',
-            boxShadow: '0px 0px 60px 0px #635BFF4D',
-        },
-        spotlight: '/assets/spotlight5.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Dagger Hilt',
+                path: '/assets/dagger.svg',
             },
         ],
     },
@@ -234,14 +166,20 @@ export const techStack = {
         subText: 'I specialize in Kotlin/Java with a focus on Native android and compose'
 };
 
+export const passion ={
+    image: '/assets/grid3.png',
+    headText: 'My passion for Coding',
+    subText: 'Love to solve problems and create things through code. Coding with fun and passion.'
+};
+
 export const work = {
     headText: 'Available to work remotely/on site.',
-    subText: 'I am currently based in Cairo, Egypt, with remote work available.'
+    subText: 'I am currently based in Ismailia, Egypt, with remote work available.'
 
 }
 
 export const calculateSizes = (isSmall, isMobile) => {
     return {
-        scale: isSmall ? 0.8 : isMobile ? 0.7 : 1.25,
+        scale: isSmall ? 0.8 : isMobile ? 0.7 : 1,
     };
 };

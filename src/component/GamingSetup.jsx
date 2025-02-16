@@ -13,7 +13,7 @@ const GamingSetup = (props) => {
 
     useEffect(() => {
         actions['Armature.002|mixamo.com|Layer0.001 Retarget'].play()
-    }, []);
+    });
 
     return (
         <group ref={group} {...props} dispose={null}>
@@ -89,12 +89,45 @@ const GamingSetup = (props) => {
                     />
                     <primitive object={nodes.Hips} />
                 </group>
+                <group name="carpet" rotation={[-Math.PI / 2, 0, -1.621]} scale={0.036}>
+                    <group name="df99dd05f2a1433284311108bb2d2ac9fbx" rotation={[Math.PI / 2, 0, 0]}>
+                        <group name="RootNode">
+                            <group name="Carpet_Flottebo" />
+                        </group>
+                    </group>
+                </group>
+                <group name="Base" rotation={[-Math.PI / 2, 0, 0]} scale={100} />
+                <mesh
+                    name="Cylinder"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Cylinder.geometry}
+                    material={materials.marbel}
+                    position={[0, -0.141, 0]}
+                    scale={[5.741, 0.038, 5.741]}
+                />
+                <group name="Cylinder001" position={[0.3, -0.109, 0]} scale={[4.038, 0.01, 4.038]}>
+                    <mesh
+                        name="Cylinder002"
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Cylinder002.geometry}
+                        material={materials.Carpet_Flottebo_Mat}
+                    />
+                    <mesh
+                        name="Cylinder002_1"
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Cylinder002_1.geometry}
+                        material={materials['Material.001']}
+                    />
+                </group>
                 <mesh
                     name="desk"
                     castShadow
                     receiveShadow
                     geometry={nodes.desk.geometry}
-                    material={materials['Material.001']}
+                    material={materials['Material.66']}
                     rotation={[Math.PI / 2, 0, 0]}
                 />
                 <mesh
@@ -187,7 +220,7 @@ const GamingSetup = (props) => {
                     castShadow
                     receiveShadow
                     geometry={nodes['mouse-pad'].geometry}
-                    material={materials.Material}
+                    material={materials['Material.020']}
                     position={[0.457, 2.595, 0]}
                     scale={[0.582, 1, 1.832]}
                 />
@@ -211,15 +244,6 @@ const GamingSetup = (props) => {
                         material={materials['Material.013']}
                     />
                 </group>
-                <mesh
-                    name="Cylinder"
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Cylinder.geometry}
-                    material={nodes.Cylinder.material}
-                    position={[0, -0.124, 0]}
-                    scale={[6.305, 0.045, 6.305]}
-                />
             </group>
         </group>
     )

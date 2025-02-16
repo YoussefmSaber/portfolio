@@ -16,21 +16,27 @@ const Hero = () => {
 
     return (
         <section id="home" className={"min-h-screen w-full flex flex-col relative"}>
-            <div className={"w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3"}>
+            <div className={"w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 z-3"}>
                 <p className={"sm:text-3xl text-xl font-medium text-white text-center font-generalsans"}>Hi, I am Youssef <span className={"waving-hand"}>👋</span></p>
                 <p className={"hero_tag text-gray_gradient"}>A Mobile Android Developer</p>
             </div>
             <div className={"w-full h-full absolute inset-0"}>
                 <Canvas className={"w-full h-full"}>
                     <Suspense fallback={<CanvasLoader />}>
+
                      <OrbitControls maxPolarAngle={Math.PI/2} enableZoom={false}/>
-                        <PerspectiveCamera makeDefault position={[-10, 0, 15]} enableZoom={false} />
+                        <PerspectiveCamera
+                            makeDefault
+                            position={[-7.5, 0, 7.5]}
+                            rotation={[0, 90, 0]}
+                        />
                         <GamingSetup scale={sizes.scale}
-                           position={[0,-3,0]}
-                           rotation={[0, 0, 0]}/>
-                        <ambientLight position={[0,10,0]} intensity={2} color={"#A8B5FF"} />
-                        <directionalLight position={[0, 10, 10]} intensity={2} color={"#FFF4CA"}/>
-                        <directionalLight position={[-20, 0, 0]} intensity={1} color={"#FFFFFF"}/>
+                                     position={[0,-3,0]}
+                                     rotation={[0, 0, 0]}/>
+                        <pointLight position={[-0.8, 3.5,0]} intensity={10} color={"#718695"} distance={4.28} decay={0}/>
+                        <pointLight position={[0, 10, 0]} intensity={250} color={"#fff4ca"}/>
+                        <pointLight position={[0, 10, 10]} intensity={200} color={"#FFFFFF"} decay={2}/>
+                        <pointLight position={[-10, 10, 0]} intensity={200} color={"#93a4bd"} decay={2}/>
                     </Suspense>
                 </Canvas>
             </div>

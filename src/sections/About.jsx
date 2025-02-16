@@ -1,4 +1,4 @@
-import {aboutMe, techStack, work} from "../constants/index.js";
+import {aboutMe, passion, techStack, work} from "../constants/index.js";
 import Globe from "react-globe.gl";
 import Button from "../component/Button.jsx";
 import {useState} from "react";
@@ -53,10 +53,10 @@ const About = () => {
                 </div>
                 <div className={"xl:col-span-2 xl:row-span-3"}>
                     <div className={"grid-container"}>
-                        <img src={"/assets/grid3.png"} alt={"grid-3"} className={"w-full sm:h-[276px] h-fit object-contain"}/>
+                        <img src={passion.image} alt={"grid-3"} className={"w-full sm:h-[276px] h-fit object-contain"}/>
                         <div>
-                            <p className={"grid-headtext"}>My passion for Coding</p>
-                            <p className={"grid-subtext"}>Love to solve problems and create things through code. Coding with fun and passion.</p>
+                            <p className={"grid-headtext"}>{passion.headText}</p>
+                            <p className={"grid-subtext"}>{passion.subText}</p>
                         </div>
                     </div>
                 </div>

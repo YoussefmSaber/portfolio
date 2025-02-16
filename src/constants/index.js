@@ -27,7 +27,7 @@ export const myProjects = [
         title: 'MedFinder - AI-Powered Medical App',
         desc: 'MedFinder is an AI-driven Android app that helps users locate nearby pharmacies, find medicines through prescription or image recognition, set treatment reminders, and track health metrics like BMI and BMR. It also features AI-powered diagnosis and medicine recommendations for a smarter healthcare experience.',
         subdesc:'Developed with Kotlin and Clean Architecture, MedFinder utilizes Room Database, Retrofit for API communication, Google Maps for location services, and AI for image recognition and diagnosis. It offers a seamless and intelligent solution for medicine discovery, treatment management, and health monitoring.'
-            , href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            , href: 'https://github.com/YoussefmSaber/MedFinder',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
@@ -68,7 +68,7 @@ export const myProjects = [
         desc: 'GeoGlimpse is a landmark detection app that uses AI to identify landmarks in images. It uses a custom-trained model to identify landmarks in images and provides its results in real-time without any internet connection.',
         subdesc:
             'Built as an innovative mobile application using Jetpack Compose and TensorFlow, GeoGlimpse is designed for cutting-edge user experience and machine learning capabilities, ensuring seamless functionality and scalability.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        href: 'https://github.com/YoussefmSaber/GeoGlimpse',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
@@ -109,7 +109,7 @@ export const myProjects = [
         desc: 'Task Manager is a sleek and intuitive Android app designed to help users organize their daily tasks efficiently. It allows users to create, update, and manage to-do lists with a smooth user experience, ensuring productivity and task completion.',
         subdesc:
             'Built with Kotlin and following Clean Architecture principles, Task Manager leverages Room Database for offline storage, MVVM for structured UI interactions, and Jetpack Compose for a modern UI experience. It provides an easy-to-use platform for managing tasks effectively.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        href: 'https://github.com/YoussefmSaber/PRODIGY_AD_02',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.webp',
         logoStyle: {

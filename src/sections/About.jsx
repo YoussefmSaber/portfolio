@@ -47,7 +47,9 @@ const About = () => {
                         <div>
                             <p className={"grid-headtext"}>{work.headText}</p>
                             <p className={"grid-subtext"}>{work.subText}</p>
-                            <Button name={"Contact me"} isBeam containerClass={"w-full mt-5"}/>
+                            <a href="#contact">
+                                <Button name={"Contact me"} isBeam containerClass={"w-full mt-5"}/>
+                            </a>
                         </div>
                     </div>
                 </div>

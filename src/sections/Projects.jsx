@@ -3,7 +3,7 @@ import {Suspense, useState} from "react";
 import {Canvas} from "@react-three/fiber";
 import CanvasLoader from "../component/CanvasLoader.jsx";
 import DemoDevice from "../component/DemoDevice.jsx";
-import {CameraControls, PerspectiveCamera} from "@react-three/drei";
+import {PerspectiveCamera} from "@react-three/drei";
 
 const Projects = () => {
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
@@ -43,7 +43,7 @@ const Projects = () => {
                                </div>
                                ))}
                        </div>
-                       <a className={"flex items-center gap-3 cursor-pointer text-white-600 z-20"} rel={"noreferrer"} href={currentProject.link} target={"_blank"}>
+                       <a className={"flex items-center gap-3 cursor-pointer pointer-events-auto text-white-600 hover:text-white z-40"} rel={"noreferrer"} href={currentProject.link} target={"_blank"}>
                            <p>Check Application</p>
                            <img src={"/assets/arrow-up.png"} alt={"arrow"} className={"w-3 h-3"}/>
                        </a>

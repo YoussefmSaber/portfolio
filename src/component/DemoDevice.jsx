@@ -24,7 +24,7 @@ const DemoDevice = (props) => {
 
     return (
         <group ref={group} {...props} dispose={null}>
-            <group position={[0, 1.175, 0]} rotation={[Math.PI/2, Math.PI, -Math.PI/21]}>
+            <group position={[0, 1.25, 0]} rotation={[Math.PI/2, Math.PI, -Math.PI/21]}>
                 <group>
                     <group  >
                         <mesh

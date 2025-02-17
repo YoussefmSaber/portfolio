@@ -154,25 +154,32 @@ export const workExperience = [ {
 export const aboutMe = {
         image: '/assets/grid1.png',
         headText: 'Hi, I\'m Youssef',
-        subText: 'With 1 year of experience, I have honed my skills in mobile development, with a focus on user friendly application',
+        subText: "I’m a passionate Android Developer with a strong focus on creating intuitive, user-friendly mobile applications."
     };
 
 export const techStack = {
         image: '/assets/grid2.png',
         headText: 'Tech Stack',
-        subText: 'I specialize in Kotlin/Java with a focus on Native android and compose'
+        subText: 'I’ve spent the past year refining my Kotlin and Java skills, specializing in native Android development with Jetpack Compose. I love building efficient, visually appealing UIs.'
 };
 
 export const passion ={
     image: '/assets/grid3.png',
     headText: 'My passion for Coding',
-    subText: 'Love to solve problems and create things through code. Coding with fun and passion.'
+    subText: 'I believe in clean, maintainable code and continuous learning. My approach is to stay up-to-date with the latest Android frameworks and best practices., ensuring each app delivers a seamless user experience.'
 };
 
 export const work = {
     headText: 'Available to work remotely/on site.',
-    subText: 'I am currently based in Ismailia, Egypt, with remote work available.'
+    subText: "Based in Ismailia, Egypt, I'm open to remote or on-site roles worldwide. When I'm not coding, I explore new libraries, attend tech meetups, and contribute to open-source projects."
+}
 
+export const contact = {
+    headText: 'Contact me',
+    subText:"Looking for a developer who values innovation, and a user-first mindset?",
+    phone: "+201030826402",
+    phone_img: '/assets/call.svg',
+    email: "youssef.mu.saber@gmail.com"
 }
 
 export const calculateSizes = (isSmall, isMobile) => {

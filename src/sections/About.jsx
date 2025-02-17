@@ -1,25 +1,19 @@
-import {aboutMe, passion, techStack, work} from "../constants/index.js";
+import {aboutMe, contact, passion, techStack, work} from "../constants/index.js";
 import Globe from "react-globe.gl";
 import Button from "../component/Button.jsx";
 import {useState} from "react";
 
 const About = () => {
-    const [hasCopied, setHasCopied] = useState(false);
-    const handleCopy = () => {
-        navigator.clipboard.writeText("youssef.mu.saber@gmail.com");
-        setHasCopied(true);
-        setTimeout(() => setHasCopied(false), 2000);
-    }
     return (
-        <section id={"about"} className={"c-space my-20"}>
+        <section id={"about"} className={"c-space my-20 scroll-m-24"}>
             <p className={"head-text mb-8"}>About Me</p>
-            <div className={"grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full"}>
+            <div className={"grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-4 h-full"}>
                 <div className={"col-span-1 xl:row-span-3"}>
-                    <div className={"grid-container"}>
+                    <div className={"grid-container h-full flex flex-col"}>
                         <img src={aboutMe.image} alt={"grid-1"} className={"w-full sm:h-[276px] h-fit object-contain"}/>
                         <div>
-                            <p className={"grid-headtext"}>{aboutMe.headText}</p>
-                            <p className={"grid-subtext"}>{aboutMe.subText}</p>
+                            <p className="grid-headtext">{aboutMe.headText}</p>
+                            <p className="grid-subtext">{aboutMe.subText}</p>
                         </div>
                     </div>
                 </div>
@@ -42,6 +36,7 @@ const About = () => {
                             backgroundImageOpacity={0.5}
                             globeImageUrl={"//unpkg.com/three-globe/example/img/earth-night.jpg"}
                             bumpImageUrl={"//unpkg.com/three-globe/example/img/earth-topology.png"}
+                            pointsData={[{ lat: 30.60478, lng: 32.284164, }]}
                             />
                         </div>
                         <div>
@@ -66,11 +61,15 @@ const About = () => {
                     <div className={"grid-container"}>
                         <img src={"/assets/grid4.png"} alt={"grid-4"} className={"w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"}/>
                         <div className={"space-y-2"}>
-                            <p className={"grid-subtext text-center"}>Contact me</p>
-                            <div className={"copy-container"} onClick={handleCopy}>
-                                <img src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"} alt={"copy"} className={"w-6 h-6"}/>
-                                <p className={"lg:text-2xl md:text-xl font-medium text-gray_gradient"}>youssef.mu.saber@gmail.com</p>
-                            </div>
+                            <p className={"grid-headtext"}>{contact.headText}</p>
+                            <p className={"grid-subtext"}>{contact.subText}</p>
+                            <p className="grid-subtext">
+                                <span className="waving-hand" style={{ color: "inherit" }}>📞 </span> : {contact.phone}
+                            </p>
+                            
+                            <p className="grid-subtext">
+                                <span className="waving-hand" style={{ color: "inherit" }}>✉️ </span> : {contact.email}
+                            </p>
                         </div>
                     </div>
                 </div>

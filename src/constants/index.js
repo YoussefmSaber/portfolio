@@ -24,6 +24,7 @@ export const navLinks = [
 // TODO: Modify this section
 export const myProjects = [
     {
+        id: 1,
         title: 'MedFinder - AI-Powered Medical App',
         desc: 'MedFinder is an AI-driven Android app that helps users locate nearby pharmacies, find medicines through prescription or image recognition, set treatment reminders, and track health metrics like BMI and BMR. It also features AI-powered diagnosis and medicine recommendations for a smarter healthcare experience.',
         subdesc:'Developed with Kotlin and Clean Architecture, MedFinder utilizes Room Database, Retrofit for API communication, Google Maps for location services, and AI for image recognition and diagnosis. It offers a seamless and intelligent solution for medicine discovery, treatment management, and health monitoring.',
@@ -64,6 +65,7 @@ export const myProjects = [
         ],
     },
     {
+        id: 2,
         title: 'GeoGlimpse - AI Landmark Detection App',
         desc: 'GeoGlimpse is a landmark detection app that uses AI to identify landmarks in images. It uses a custom-trained model to identify landmarks in images and provides its results in real-time without any internet connection.',
         subdesc:
@@ -105,6 +107,7 @@ export const myProjects = [
         ],
     },
     {
+        id: 3,
         title: 'Task Manager – Efficient To-Do & Productivity Tracker',
         desc: 'Task Manager is a sleek and intuitive Android app designed to help users organize their daily tasks efficiently. It allows users to create, update, and manage to-do lists with a smooth user experience, ensuring productivity and task completion.',
         subdesc:
@@ -141,15 +144,26 @@ export const myProjects = [
     },
 ];
 
-export const workExperience = [ {
-    index: 1,
-    position: 'Android Developer Intern',
-    company: 'Prodigy InfoTech',
-    location: 'Remote',
-    duration: 'December, 2024 - January, 2025',
-    desc: 'Prodigy InfoTech is a technology company that provides internships in mobile development, web development, machine learning, and data science. It focuses on offering hands-on experience through real-world projects, helping individuals develop practical skills and industry knowledge in a supportive learning environment.',
-    icon: '/assets/prodigy.png',
-},]
+export const workExperience = [ 
+    {
+        index: 1,
+        position: 'Android Developer Trainee',
+        company: 'The Chance',
+        location: 'Remote',
+        duration: 'March, 2025 - Present',
+        desc: 'The Chance is a dynamic career development platform dedicated to empowering job seekers and professionals by connecting them with valuable opportunities. Through expert-led training, internship programs, and job postings, The Chance helps individuals enhance their skills and advance their careers. The platform also collaborates with companies to bridge the gap between talent and industry needs, ensuring mutual growth and success.',
+        icon: '/assets/thechance_logo.png', 
+    },
+    {
+        index: 2,
+        position: 'Android Developer Intern',
+        company: 'Prodigy InfoTech',
+        location: 'Remote',
+        duration: 'December, 2024 - January, 2025',
+        desc: 'Prodigy InfoTech is a technology company that provides internships in mobile development, web development, machine learning, and data science. It focuses on offering hands-on experience through real-world projects, helping individuals develop practical skills and industry knowledge in a supportive learning environment.',
+        icon: '/assets/prodigy.png',
+    },
+]
 
 export const aboutMe = {
         image: '/assets/grid1.png',
@@ -175,7 +189,7 @@ export const work = {
 }
 
 export const contact = {
-    headText: 'Contact me',
+    headText: 'Reaching me',
     subText:"Looking for a developer who values innovation, and a user-first mindset?",
     phone: "+201030826402",
     phone_img: '/assets/call.svg',

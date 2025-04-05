@@ -185,7 +185,7 @@ export const passion ={
 
 export const work = {
     headText: 'Available to work remotely/on site.',
-    subText: "Based in Ismailia, Egypt, I'm open to remote or on-site roles worldwide. When I'm not coding, I explore new libraries, attend tech meetups, and contribute to open-source projects."
+    subText: "Based in Cairo, Egypt, I'm open to remote or on-site roles worldwide. When I'm not coding, I explore new libraries, attend tech meetups, and contribute to open-source projects."
 }
 
 export const contact = {
